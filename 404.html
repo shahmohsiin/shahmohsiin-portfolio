@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 Not Found</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 30px;
+      padding: 60px 40px;
+      max-width: 650px;
+      text-align: center;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      animation: fadeIn 1s ease;
+      position: relative;
+    }
+
+    .container svg {
+      width: 160px;
+      height: 160px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: #2a2a2a;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      margin: 20px 0;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+      background-color: #4a90e2;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #357abd;
+    }
+
+    @keyframes fadeIn {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+      <g fill="none" stroke="#4a90e2" stroke-width="10">
+        <circle cx="250" cy="250" r="200" stroke-opacity="0.3" />
+        <circle cx="250" cy="250" r="150" stroke-opacity="0.5" />
+        <path d="M170 190 Q250 100 330 190" stroke-linecap="round" />
+        <circle cx="200" cy="250" r="10" fill="#4a90e2" />
+        <circle cx="300" cy="250" r="10" fill="#4a90e2" />
+        <path d="M200 300 Q250 340 300 300" stroke-linecap="round" />
+      </g>
+    </svg>
+    <h1>404</h1>
+    <p>This page went on an adventure and got lost in the cosmos. 🚀<br />Let's bring you back to familiar territory.</p>
+    <a href="/">Return Home</a>
+  </div>
+</body>
+</html>
